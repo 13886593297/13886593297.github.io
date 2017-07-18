@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>使用index.ph优化url地址的做法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1234567891011121314151617181920212223242526&amp;lt;?php    header(&quot;Content-type:text/html;charset=utf-8&quot;);    //给默认值,默认访问主页!    $directory = &quot;dashboard&quot;;    $fileName = &quot;index&quot;;    //如果用户在输入链接的时候,后面跟上了 模块">
+<meta name="keywords" content="php">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用index.ph优化url地址的做法">
+<meta property="og:url" content="http://yoursite.com/2017/07/18/使用index-ph优化url地址的做法/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1234567891011121314151617181920212223242526&amp;lt;?php    header(&quot;Content-type:text/html;charset=utf-8&quot;);    //给默认值,默认访问主页!    $directory = &quot;dashboard&quot;;    $fileName = &quot;index&quot;;    //如果用户在输入链接的时候,后面跟上了 模块">
+<meta property="og:updated_time" content="2017-07-18T13:47:01.241Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="使用index.ph优化url地址的做法">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526&amp;lt;?php    header(&quot;Content-type:text/html;charset=utf-8&quot;);    //给默认值,默认访问主页!    $directory = &quot;dashboard&quot;;    $fileName = &quot;index&quot;;    //如果用户在输入链接的时候,后面跟上了 模块">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-使用index-ph优化url地址的做法" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-使用index-ph优化url地址的做法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/18/使用index-ph优化url地址的做法/" class="article-date">
   <time datetime="2017-07-18T13:18:39.000Z" itemprop="datePublished">2017-07-18</time>
@@ -78,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/18/使用index-ph优化url地址的做法/">使用index.ph优化url地址的做法</a>
+    <h1 class="article-title" itemprop="name">
+      使用index.ph优化url地址的做法
     </h1>
   
 
@@ -100,52 +103,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-事件兼容性处理" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/18/事件兼容性处理/" class="article-date">
-  <time datetime="2017-07-18T13:01:01.000Z" itemprop="datePublished">2017-07-18</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/学习/">学习</a>►<a class="article-category-link" href="/categories/学习/javascript/">javascript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/18/事件兼容性处理/">事件兼容性处理</a>
-    </h1>
+    <a href="/2017/07/18/事件兼容性处理/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">事件兼容性处理</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createRegister</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (<span class="built_in">document</span>.addEventListener) &#123;</div><div class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">ele, type, handler</span>) </span>&#123;</div><div class="line">      ele.addEventListener(type, handler);</div><div class="line">    &#125;</div><div class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">document</span>.attachEvent) &#123;</div><div class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">ele, type, handler</span>) </span>&#123;</div><div class="line">      ele.attachEvent(<span class="string">'on'</span> + type, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        handler.call(ele, <span class="built_in">window</span>.event);</div><div class="line">      &#125;);</div><div class="line">    &#125;</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">ele, type, handler</span>) </span>&#123;</div><div class="line">      ele[<span class="string">'on'</span> + type] = handler;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/18/事件兼容性处理/" data-id="cj59m4pfe0000p0u4qhsbxses" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
